@@ -8,11 +8,11 @@ class App extends React.PureComponent {
     state = {Component: null}
 
     onButton1 = () => {
-        sys.import(`https://temporary-hosting123.000webhostapp.com/bundle.js?`).then(module => this.setState({Component: module.default}))
+        sys.import(`https://temporary-hosting123.000webhostapp.com/bundle.js`).then(module => this.setState({Component: module.default}))
     }
 
     onButton2 = () => {
-        sys.import(`https://temporary-hosting123.000webhostapp.com/bundle2.js?`).then(module => this.setState({Component: module.default}))
+        sys.import(`https://temporary-hosting123.000webhostapp.com/bundle2.js`).then(module => this.setState({Component: module.default}))
     }
 
     
